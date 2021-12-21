@@ -18,4 +18,4 @@ if __name__ == '__main__':
     data = get_miner_data(miner_address="fc8f035129c537fc19e504613b841fd12aa035e7")
     name = f"{now.year}-{now.month}-{now.day}_{now.hour}:{now.minute}_api_data.json"
     with open(name, 'w') as f:
-        json.dump(data, os.join("/home/matedennehy/Antartica/antartica-etl", f), indent = 2)
+        json.dump(data, os.path.join("/home/matedennehy/Antartica/antartica-etl", f), indent = 2)
